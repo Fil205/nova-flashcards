@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="it" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2" />
+		<link rel="manifest" href="/manifest.json?v=3" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Falschcard — Crea e studia flashcard con AI" />
+		<meta name="theme-color" content="#05060A" />
+		<meta name="color-scheme" content="dark" />
+		<!-- PWA / installability -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="Falschcard" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>Falschcard</title>
+
+		<!-- Capture beforeinstallprompt before SvelteKit hydrates — the browser can fire
+		     it before any onMount listener is registered. Stash on window + re-emit a
+		     custom event so pwaStore can pick it up whenever it initialises. -->
+		<script>
+			window.__deferredInstallPrompt = null;
+			window.addEventListener('beforeinstallprompt', function (e) {
+				e.preventDefault();
+				window.__deferredInstallPrompt = e;
+				window.dispatchEvent(new Event('pwa-installable'));
+			});
+			window.addEventListener('appinstalled', function () {
+				window.__deferredInstallPrompt = null;
+				window.dispatchEvent(new Event('pwa-installed'));
+			});
+		</script>
+
+		<!-- Google Fonts (Inter + Space Grotesk + JetBrains Mono) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="/_app/immutable/entry/start.Cj89xtge.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CfCkAeVg.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/zHcUJTt4.js" rel="modulepreload">
+		<link href="/_app/immutable/entry/app.BlCFrGLG.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Ct5KBVBl.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BhDUxMO9.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DUzwYpPj.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DeVgPpkz.js" rel="modulepreload">
+		<link href="/_app/immutable/nodes/0.8cFBdyDE.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/aWPtL9xz.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Dun3J79g.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BflIJvOd.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/iK1i5WXW.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DUSpk0MJ.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/Cb4aUqcc.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BTdM5JnV.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/PzEoFt_y.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/DD-Ql1eb.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/RZ2Y7Nef.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/CkeVLr30.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/BOJhrJqj.js" rel="modulepreload">
+		<link href="/_app/immutable/chunks/rj34VUir.js" rel="modulepreload">
+		
+		<link href="/_app/immutable/assets/0.aS-H1hMs.css" rel="stylesheet">
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-fc-bg text-fc-text antialiased">
+		<div id="svelte">
+			<script>
+				{
+					__sveltekit_ccrrzx = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.Cj89xtge.js"),
+						import("/_app/immutable/entry/app.BlCFrGLG.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+
+					if ('serviceWorker' in navigator) {
+						const script_url = '/service-worker.js';
+						const policy = globalThis?.window?.trustedTypes?.createPolicy(
+							'sveltekit-trusted-url',
+							{ createScriptURL(url) { return url; } }
+						);
+						const sanitised = policy?.createScriptURL(script_url) ?? script_url;
+						addEventListener('load', function () {
+							navigator.serviceWorker.register(sanitised);
+						});
+					}
+				}
+			</script>
+		</div>
+	</body>
+</html>

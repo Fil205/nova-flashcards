@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="it" class="dark">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.svg?v=2" type="image/svg+xml" />
+		<link rel="apple-touch-icon" href="%sveltekit.assets%/apple-touch-icon.png?v=2" />
+		<link rel="manifest" href="%sveltekit.assets%/manifest.json?v=3" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Falschcard — Crea e studia flashcard con AI" />
+		<meta name="theme-color" content="#05060A" />
+		<meta name="color-scheme" content="dark" />
+		<!-- PWA / installability -->
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-title" content="Falschcard" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<title>Falschcard</title>
+
+		<!-- Capture beforeinstallprompt before SvelteKit hydrates — the browser can fire
+		     it before any onMount listener is registered. Stash on window + re-emit a
+		     custom event so pwaStore can pick it up whenever it initialises. -->
+		<script>
+			window.__deferredInstallPrompt = null;
+			window.addEventListener('beforeinstallprompt', function (e) {
+				e.preventDefault();
+				window.__deferredInstallPrompt = e;
+				window.dispatchEvent(new Event('pwa-installable'));
+			});
+			window.addEventListener('appinstalled', function () {
+				window.__deferredInstallPrompt = null;
+				window.dispatchEvent(new Event('pwa-installed'));
+			});
+		</script>
+
+		<!-- Google Fonts (Inter + Space Grotesk + JetBrains Mono) -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+			rel="stylesheet"
+		/>
+		%sveltekit.head%
+	</head>
+	<body data-sveltekit-preload-data="hover" class="bg-fc-bg text-fc-text antialiased">
+		<div id="svelte">%sveltekit.body%</div>
+	</body>
+</html>

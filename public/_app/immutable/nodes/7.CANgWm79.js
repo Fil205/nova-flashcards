@@ -1,0 +1,42 @@
+import{c as B,a as d,d as Nt,s as y,t as Y,f as h,b as Rt}from"../chunks/Ct5KBVBl.js";import{p as D,f as A,i as it,a as G,o as At,e as Ft,g as t,$ as It,u as M,d as tt,c as o,r as s,s as c,b as et,n as V,t as N}from"../chunks/zHcUJTt4.js";import{s as dt,r as lt,i as z}from"../chunks/BhDUxMO9.js";import{I as vt,c as ft,a as jt,w as Et,h as j,e as at,i as rt,B as st}from"../chunks/aWPtL9xz.js";import{h as Vt}from"../chunks/DMQIZ-Vu.js";import{b as ot}from"../chunks/DeVgPpkz.js";import{g as R}from"../chunks/CfCkAeVg.js";import{p as qt}from"../chunks/Dun3J79g.js";import{s as C,v as Bt,a as Dt}from"../chunks/DiXNZ81l.js";import{d as Gt}from"../chunks/iK1i5WXW.js";import{p as Tt}from"../chunks/DlRjBxlr.js";import{G as nt}from"../chunks/Cb4aUqcc.js";import{R as ct,M as q}from"../chunks/CEvEzqM6.js";var Ut=new Set(["$$slots","$$events","$$legacy"]);function Wt(P,p){D(p,!0);/**
+ * @license @lucide/svelte v0.511.0 - ISC
+ *
+ * ISC License
+ *
+ * Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ */let u=lt(p,Ut);const x=[["path",{d:"M15 21v-8a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v8"}],["path",{d:"M3 10a2 2 0 0 1 .709-1.528l7-5.999a2 2 0 0 1 2.582 0l7 5.999A2 2 0 0 1 21 10v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"}]];vt(P,dt({name:"house"},()=>u,{get iconNode(){return x},children:(m,$)=>{var g=B(),b=A(g);ft(b,()=>p.children??it),d(m,g)},$$slots:{default:!0}})),G()}var Qt=new Set(["$$slots","$$events","$$legacy"]);function Zt(P,p){D(p,!0);/**
+ * @license @lucide/svelte v0.511.0 - ISC
+ *
+ * ISC License
+ *
+ * Copyright (c) for portions of Lucide are held by Cole Bemis 2013-2022 as part of Feather (MIT). All other copyright (c) for Lucide are held by Lucide Contributors 2022.
+ *
+ * Permission to use, copy, modify, and/or distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ *
+ */let u=lt(p,Qt);const x=[["path",{d:"M6 9H4.5a2.5 2.5 0 0 1 0-5H6"}],["path",{d:"M18 9h1.5a2.5 2.5 0 0 0 0-5H18"}],["path",{d:"M4 22h16"}],["path",{d:"M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"}],["path",{d:"M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"}],["path",{d:"M18 2H6v7a6 6 0 0 0 12 0V2Z"}]];vt(P,dt({name:"trophy"},()=>u,{get iconNode(){return x},children:(m,$)=>{var g=B(),b=A(g);ft(b,()=>p.children??it),d(m,g)},$$slots:{default:!0}})),G()}var Jt=h('<p class="text-fc-muted text-sm mt-1"> </p>'),Kt=h('<p> </p> <p class="text-xs text-fc-faint mt-1">Punteggio</p>',1),Ot=h('<p> </p> <p class="text-xs text-fc-faint mt-1"> </p>',1),Xt=h('<span class="text-xs text-fc-muted mt-0.5 truncate block">Risposta: <!></span>'),Yt=h('<div class="glass px-4 py-3 flex items-start gap-3"><span> </span> <div class="flex-1 min-w-0"><!> <!> <!></div> <span> </span></div>'),te=h('<div class="flex flex-col gap-2"><h2 class="text-sm font-semibold text-fc-muted uppercase tracking-wide">Dettaglio carte</h2> <div class="flex flex-col gap-2"></div></div>'),ee=h(`<button type="button" class="flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-medium
+					   border border-fc-danger/40 bg-fc-danger/10 text-fc-danger
+					   hover:bg-fc-danger/20 hover:border-fc-danger/60 transition-all"><!> </button>`),ae=h('<div class="max-w-2xl mx-auto flex flex-col gap-6"><div class="text-center pt-4"><div class="w-16 h-16 rounded-2xl bg-fc-gradient flex items-center justify-center mx-auto mb-4 shadow-glow"><!></div> <h1 class="text-2xl font-bold font-display gradient-text">Sessione completata!</h1> <!></div> <div class="grid grid-cols-2 sm:grid-cols-4 gap-3"><!> <!></div> <!> <div class="flex flex-wrap gap-3 justify-center"><!> <!> <!></div></div>');function me(P,p){D(p,!0);const u=M(()=>Tt(qt.params.id));let x=tt(null),m=tt(null);const $=M(()=>C.computeSummary()),g=M(()=>{var n;return((n=C.session)==null?void 0:n.results)??[]}),b=M(()=>Gt.currentDeck),T=M(()=>C.getWrongCards());At(()=>{if(isNaN(t(u))){R("/");return}if(!C.session){R(`/deck/${t(u)}`);return}if(t(x)&&jt(t(x),0,.4),t(m)){const n=t(m).querySelectorAll(".glass");Et(n,.08,.1)}});function pt(n){return n>=.8?"text-fc-success":n>=.5?"text-fc-warning":"text-fc-danger"}function ut(){R(`/study/${t(u)}`)}function xt(){R(`/study/${t(u)}?mode=wrong`)}function mt(){C.endSession(),R("/")}function gt(n){var k,w;return((w=(k=t(b))==null?void 0:k.cards.find(S=>S.id===n))==null?void 0:w.question)??`Carta #${n}`}var U=B();Vt("8y3wix",n=>{Ft(()=>{It.title="Risultati — Falschcard"})});var _t=A(U);{var ht=n=>{var k=ae(),w=o(k),S=o(w),$t=o(S);Zt($t,{size:28,class:"text-white"}),s(S);var bt=c(S,4);{var wt=a=>{var e=Jt(),i=o(e,!0);s(e),N(()=>y(i,t(b).name)),d(a,e)};z(bt,a=>{t(b)&&a(wt)})}s(w),ot(w,a=>et(x,a),()=>t(x));var F=c(w,2),W=o(F);nt(W,{pad:"sm",class:"text-center col-span-2 sm:col-span-1",children:(a,e)=>{var i=Kt(),l=A(i),r=o(l);s(l),V(2),N((f,_)=>{j(l,1,`text-3xl font-bold ${f??""}`),y(r,`${_??""}%`)},[()=>pt(t($).score),()=>Math.round(t($).score*100)]),d(a,i)},$$slots:{default:!0}});var yt=c(W,2);at(yt,17,()=>[{label:"Corretti",value:t($).correct,color:"text-fc-success"},{label:"Parziali",value:t($).partial,color:"text-fc-warning"},{label:"Errati",value:t($).wrong,color:"text-fc-danger"}],rt,(a,e)=>{nt(a,{pad:"sm",class:"text-center",children:(i,l)=>{var r=Ot(),f=A(r),_=o(f,!0);s(f);var I=c(f,2),L=o(I,!0);s(I),N(()=>{j(f,1,`text-2xl font-bold ${t(e).color??""}`),y(_,t(e).value),y(L,t(e).label)}),d(i,r)},$$slots:{default:!0}})}),s(F),ot(F,a=>et(m,a),()=>t(m));var Q=c(F,2);{var kt=a=>{var e=te(),i=c(o(e),2);at(i,21,()=>t(g),rt,(l,r)=>{var f=Yt(),_=o(f),I=o(_,!0);s(_);var L=c(_,2),O=o(L);{let v=M(()=>gt(t(r).cardId));q(O,{get text(){return t(v)},class:"text-sm text-fc-text truncate block"})}var X=c(O,2);{var Ct=v=>{var H=Xt(),Ht=c(o(H));q(Ht,{get text(){return t(r).userAnswer}}),s(H),d(v,H)};z(X,v=>{t(r).userAnswer&&!t(r).skipped&&v(Ct)})}var Pt=c(X,2);{var St=v=>{q(v,{get text(){return t(r).aiFeedback},class:"text-xs text-fc-faint mt-1 block"})};z(Pt,v=>{t(r).aiFeedback&&v(St)})}s(L);var E=c(L,2),Lt=o(E,!0);s(E),s(f),N((v,H)=>{j(_,1,`text-xs w-5 h-5 rounded-full flex items-center justify-center shrink-0 mt-0.5
+									 ${t(r).verdict==="correct"?"bg-fc-success/20 text-fc-success":t(r).verdict==="partial"?"bg-fc-warning/20 text-fc-warning":"bg-fc-danger/20 text-fc-danger"}`),y(I,t(r).verdict==="correct"?"✓":t(r).verdict==="partial"?"~":"✗"),j(E,1,`text-xs text-fc-muted shrink-0 ${v??""}`),y(Lt,H)},[()=>Bt(t(r).verdict),()=>Dt(t(r).verdict)]),d(l,f)}),s(i),s(e),d(a,e)};z(Q,a=>{t(g).length>0&&a(kt)})}var Z=c(Q,2),J=o(Z);st(J,{variant:"ghost",size:"sm",onclick:mt,iconLeft:e=>{Wt(e,{size:13})},children:(e,i)=>{V();var l=Y("Mazzi");d(e,l)},$$slots:{iconLeft:!0,default:!0}});var K=c(J,2);st(K,{variant:"secondary",size:"sm",onclick:ut,iconLeft:e=>{ct(e,{size:13})},children:(e,i)=>{V();var l=Y("Ripeti sessione");d(e,l)},$$slots:{iconLeft:!0,default:!0}});var Mt=c(K,2);{var zt=a=>{var e=ee(),i=o(e);ct(i,{size:13});var l=c(i);s(e),N(()=>y(l,` Ripeti sbagliate (${t(T).length??""})`)),Rt("click",e,xt),d(a,e)};z(Mt,a=>{t(T).length>0&&a(zt)})}s(Z),s(k),d(n,k)};z(_t,n=>{C.session&&n(ht)})}d(P,U),G()}Nt(["click"]);export{me as component};

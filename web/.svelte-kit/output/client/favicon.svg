@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#3B82F6"/>
+    </linearGradient>
+    <!-- Subtle drop shadow for the card -->
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background tile -->
+  <rect width="32" height="32" rx="7" ry="7" fill="url(#bg)"/>
+
+  <!-- Card body (white, slightly off-center left to leave space for spark) -->
+  <rect x="4.5" y="7" width="16.5" height="20" rx="3" ry="3" fill="white" opacity="0.95" filter="url(#shadow)"/>
+
+  <!-- Ruled lines simulating card text -->
+  <rect x="7.5" y="12"   width="10.5" height="1.6" rx="0.8" fill="#5B21B6" opacity="0.28"/>
+  <rect x="7.5" y="15.5" width="7.5"  height="1.6" rx="0.8" fill="#5B21B6" opacity="0.20"/>
+  <rect x="7.5" y="19"   width="9"    height="1.6" rx="0.8" fill="#5B21B6" opacity="0.16"/>
+
+  <!-- AI Spark ✦ — 4-pointed star, overlapping the upper-right corner of the card -->
+  <!-- Center at (23, 10), arm length 3.5, waist factor 0.22 -->
+  <path d="
+    M 23 6.5
+    L 23.8 9.2
+    L 26.5 10
+    L 23.8 10.8
+    L 23 13.5
+    L 22.2 10.8
+    L 19.5 10
+    L 22.2 9.2
+    Z"
+    fill="white"
+    opacity="0.97"
+  />
+  <!-- Warm accent dot at the spark centre -->
+  <circle cx="23" cy="10" r="1.4" fill="#FDE68A"/>
+</svg>

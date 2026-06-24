@@ -1,0 +1,21 @@
+{
+	"/": [
+		"src/routes/+layout.ts",
+		"src/routes/+layout.ts"
+	],
+	"/deck/[id]": [
+		"src/routes/+layout.ts"
+	],
+	"/deck/[id]/edit": [
+		"src/routes/+layout.ts"
+	],
+	"/settings": [
+		"src/routes/+layout.ts"
+	],
+	"/study/[id]": [
+		"src/routes/+layout.ts"
+	],
+	"/study/[id]/results": [
+		"src/routes/+layout.ts"
+	]
+}
